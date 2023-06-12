@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Lato:wght@100;300;400&family=Montserrat:wght@300&family=Roboto+Condensed&family=Teko:wght@300&display=swap');
+
+/* Damos estilo al body (contorno de la página) */
+body {
+  font-family: 'Geologica';
+  text-align: center;
+  background-color: rgb(226, 243, 243);
+}
+
+/* Damos estilos al contenido de la seccion */
+#container {
+  padding: 1%;
+  margin: 5% 15%;
+  border-radius: 7%;
+  background-color: rgb(211, 217, 222);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas:
+    "img h1"
+    "img div";
+}
+
+/* Acomodamos la imagen en el contenido */
+img {
+  margin: auto 5%;
+  grid-area: img;
+  width: 100%;
+}
+
+/*Damos estilos al título principal (span) */
+h1 {
+  grid-area: h1;
+  text-align: center;
+  color: rgb(25, 19, 95);
+  font-family: "Lato";
+}
+
+span {
+  color: rgb(68, 18, 126);
+  font-size: 8vh;
+}
+
+/* Damos estilos a los div */
+#login, #transaction{
+  background-color: rgb(175, 182, 180);
+  justify-content: center;
+  padding: 4%;
+  margin: 0 5%;
+  border-radius: 10%;
+  border: 0.5vh solid rgb(42, 51, 136);
+}
+
+#login, #transaction:hover {
+  border: 0.7vh solid rgb(68, 18, 126);
+}
+
+/* Damos estilos al contenido del div login*/
+h2 {
+  color: rgb(25, 19, 95);
+  font-weight: bold;
+  font-size: 120%;
+}
+
+select,
+input {
+  width: 50%;
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(189, 196, 194);
+  padding: 1%;
+  margin: 2% 0;
+}
+
+select:hover {
+  border: 0.5vh solid rgb(68, 18, 126);
+}
+
+input:hover {
+  border: 0.5vh solid rgb(68, 18, 126);
+}
+
+button {
+  color: white;
+  background-color: rgb(16, 7, 69);
+  border: 2px solid rgb(81, 155, 229);
+  box-shadow: 0.5vh 0.5vh blueviolet;
+  padding: 3%;
+  margin-top: 5%;
+  border-radius: 20%;
+  font-weight: bold;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Damos estilos al contenido del div transacciones */
+#transaction button{
+  margin: 4% 2%;
+  width: 25%;
+}
+
+#transaction #button {
+  margin-top: 5%;
+  width: 30%;
+  padding: 3% 0;
+}

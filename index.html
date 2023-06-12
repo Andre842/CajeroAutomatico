@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Importamos la hoja de estilos y mensajes de alertas -->
+  <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>Cajero Automático</title>
+</head>
+
+<body>
+  <!-- Creamos la sección de nuestro cajero automático -->
+  <section id="container">
+    <img src="/CSS/Logo.png" alt="">
+    <h1>Bienvenido a su cajero automático<span> FinTech</span></h1>
+    <!-- Creamos el div de registro -->
+      <div id="login">
+          <h2>Iniciar sesión</h2>
+          <select name="count" id="accountNumber" required>
+            <option value="">Seleccione una cuenta</option>
+          </select><br>
+          <label>Contraseña</label>
+          <input type="password" placeholder="..." id="password" required><br>
+          <button onclick="login()">Iniciar sesión</button>
+      </div>
+      <!-- Creamos el div de las transacciones -->
+      <div id="transaction" style="display: none;">
+        <h2>Operaciones</h2>
+        <button onclick="checkBalance()">Consultar</button>
+        <button onclick="deposit()">Depositar</button>
+        <button onclick="withdraw()">Retirar</button><br>
+        <button id="button" onclick="logout()">Cerrar sesión</button>
+      </div>
+  </section>
+  <!--Insertamos javascript -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
